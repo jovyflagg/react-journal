@@ -1,5 +1,7 @@
 import data from "./data"
 import Card from "./components/Card"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
 const cards = data.map(item => {
@@ -11,7 +13,9 @@ const cards = data.map(item => {
 })
   return (
     <div className="App">
+      <Navbar />
       {cards}
+      <Footer />
     </div>
   )
 }
